@@ -10,7 +10,7 @@ LABEL "com.github.actions.description"="Wraps the Serverless Framework to enable
 LABEL "com.github.actions.icon"="zap"
 LABEL "com.github.actions.color"="red"
 
-RUN sudo apk add mpc1-dev
+RUN apk add mpc1-dev
 
 RUN npm i -g serverless@2.x
 ENTRYPOINT ["serverless"]
