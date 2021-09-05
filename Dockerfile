@@ -13,6 +13,7 @@ LABEL "com.github.actions.color"="red"
 
 RUN apk add build-base
 RUN apk add --no-cache gcc musl-dev
+RUN npm i typescript -g
 
-RUN npm i -g serverless@2.x
+RUN npm i -g serverless@2.4.0
 ENTRYPOINT ["serverless"]
